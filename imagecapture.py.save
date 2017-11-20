@@ -1,0 +1,8 @@
+import urllib.Request as request
+
+def captureImage():
+	request.urlretrieve("http://localhost:8080/?action=snapshot", "static/img/capture.jpg")
+	return "static/img/capture.jpg"
+
+
+print(captureImage())
